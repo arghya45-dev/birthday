@@ -70,11 +70,12 @@ g[id^=BudGroup] g[id^=BudGroup] g[id^=Bud],
   font-size: 2.5rem;
 }
 
-/* Custom Play/Pause Button Styles */
-.play-btn {
-  width: 60px;
-  height: 60px;
-  background-color: #fff;
+.prompt {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 0.8rem;
+  color: #fdfdfd;
+  width: 70px;
+  height: 70px;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -86,7 +87,35 @@ g[id^=BudGroup] g[id^=BudGroup] g[id^=Bud],
   top: 20px;  /* Distance from the top */
   right: 20px; /* Distance from the right */
   z-index: 1000; /* Ensure it stays above other elements */
+ 
+  
+  
 }
+
+/* Custom Play/Pause Button Styles */
+.play-btn {
+  
+  width: 60px;
+  height: 60px;
+  background-color: #f6f6f6;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 20px;  /* Distance from the top */
+  right: 20px; /* Distance from the right */
+  z-index: 1000; /* Ensure it stays above other elements */
+  opacity: 0;
+}
+
+
+
+
+
 
 /* Play Icon */
 .play-btn.play::before {
@@ -96,6 +125,7 @@ g[id^=BudGroup] g[id^=BudGroup] g[id^=Bud],
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 30px solid #000;
+  
 }
 
 /* Pause Icon */
@@ -120,3 +150,4 @@ g[id^=BudGroup] g[id^=BudGroup] g[id^=Bud],
   border-bottom: 20px solid transparent;
   margin-left: 5px;
 }
+

@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
       music.play();
       startMusicButton.classList.remove('play');
       startMusicButton.classList.add('pause');
-      musicModal.style.display = 'none';  // Hide the modal when music starts
+      musicModal.style.display = 'block';  // Hide the modal when music starts
     } else {
       music.pause();
       startMusicButton.classList.remove('pause');
