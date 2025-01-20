@@ -1,0 +1,122 @@
+body {
+  background: #131b21;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+svg#flower-frame {
+  height: 90vh;
+  width: 100%;
+}
+
+
+
+#Footer_group_1_,
+[id^=PinkFlowerGroup],
+[id^=BaseGroup] path,
+[id^=LeafGroup] path,
+path[id^=Stroke],
+g[id^=BudGroup] g[id^=BudGroup] g[id^=Bud],
+#Bud8_1_,
+#Bud10_1_,
+#Bud23_1_,
+#Bud26_1_,
+[id^=Dots],
+[id^=Flourish] {
+  visibility: hidden;
+}
+
+
+
+/* Animation for SVG elements and text */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* #flower-frame [id^=PinkFlowerGroup],
+#flower-frame [id^=BaseGroup] path,
+#flower-frame [id^=LeafGroup] path,
+#flower-frame path[id^=Stroke],
+#flower-frame g[id^=BudGroup] g[id^=BudGroup] g[id^=Bud],
+#flower-frame #Bud8_1_,
+#flower-frame #Bud10_1_,
+#flower-frame #Bud23_1_,
+#flower-frame #Bud26_1_,
+#flower-frame [id^=Dots],
+#flower-frame [id^=Flourish], */
+.happy-birthday {
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeIn 7s ease-in-out forwards;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style:oblique
+}
+.adreeja {
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeIn 7s ease-in-out forwards;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style:inherit;
+  font-size: 2.5rem;
+}
+
+/* Custom Play/Pause Button Styles */
+.play-btn {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 20px;  /* Distance from the top */
+  right: 20px; /* Distance from the right */
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+/* Play Icon */
+.play-btn.play::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 30px solid #000;
+}
+
+/* Pause Icon */
+.play-btn.pause::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 10px solid #000;
+  border-right: 10px solid #000;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  margin-right: 5px;
+}
+
+.play-btn.pause::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 10px solid #000;
+  border-right: 10px solid #000;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  margin-left: 5px;
+}
